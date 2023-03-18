@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Soft Star</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+  <title>Dev</title>
 
-    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
 </head>
 <body>
-    <h1 class="text-success">Simple init text</h1>
+<header class="header">
+  <div class="container header-container">
+    <a href="#">
+      <img class="logo" src="assets/images/logo.png" alt="Yurii Klymenko">
+    </a>
+    <nav class="desktop-nav">
+      <ul>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Industries</a></li>
+      </ul>
+
+      <a href="#" class="contact-me-link">Contact me</a>
+    </nav>
+    <div class="hamburger"><span></span></div>
+  </div>
+
+  <div id="hamburgerMenu" class="container header-container d-none">
+    <nav>
+      <ul>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Industries</a></li>
+      </ul>
+
+      <a href="#" class="contact-me-link">Contact me</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <img class="head-section-background" src="assets/images/about_background.png" alt="background">
+  <div class="container">
+    <section class="about-me">
+      <div class="info">
+        <h1 class="title">Yurii Klymenko</h1>
+        <p class="subtitle">Software Engineer, Front-end & Back-end Developer</p>
+        <p class="solution">
+          <span class="position-relative">I will handle everything to find</span>
+          <span class="position-relative changed-text">the ideal solution</span>
+        </p>
+
+        <a class="cta-btn" href="#">Let’s work</a>
+      </div>
+
+      <div class="projects-mockup">
+        <img class="project-image" src="assets/images/projects_mockup.png" alt="Projects">
+        <p class="title">Look whom I've already empowered</p>
+        <a class="cta-link" href="#">Case studies</a>
+        <a class="cta-btn" href="#">Let’s work</a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script type="text/javascript" src="assets/scripts/header.js"></script>
+<script type="text/javascript" src="assets/scripts/changing-text.js"></script>
 </body>
 </html>
