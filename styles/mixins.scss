@@ -1,3 +1,5 @@
+@import '../node_modules/bootstrap/scss/mixins/_breakpoints';
+
 @mixin custom-button($color, $background) {
   color: $color;
   background: $background;
@@ -15,5 +17,29 @@
   &:hover {
     background-color: #0f95d0;
     color: #fff;
+  }
+}
+
+@mixin section-title() {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 65px;
+
+  @include media-breakpoint-down(xl) {
+    font-size: 60px;
+    line-height: 58px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 54px;
+    line-height: 50px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 46px;
+    line-height: 40px;
   }
 }

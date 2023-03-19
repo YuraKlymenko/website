@@ -9,14 +9,15 @@
   <link rel="icon" type="image/png" href="assets/images/logo.png"/>
 </head>
 <body>
-<header class="header">
+<header>
   <div class="container header-container">
     <a href="#">
       <img class="logo" src="assets/images/logo.png" alt="Yurii Klymenko">
     </a>
     <nav class="desktop-nav">
       <ul>
-        <li><a href="#">About me</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#expertise">Expertise</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Industries</a></li>
       </ul>
@@ -26,10 +27,11 @@
     <div class="hamburger"><span></span></div>
   </div>
 
-  <div id="hamburgerMenu" class="container header-container d-none">
+  <div id="mobileMenu" class="container header-container d-none">
     <nav>
-      <ul>
-        <li><a href="#">About me</a></li>
+      <ul id="mobile-nav">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#expertise">Expertise</a></li>
         <li><a href="#">Portfolio</a></li>
         <li><a href="#">Industries</a></li>
       </ul>
@@ -40,9 +42,9 @@
 </header>
 
 <main>
-  <img class="head-section-background" src="assets/images/about_background.png" alt="background">
-  <div class="container">
-    <section class="about-me">
+  <section id="about" class="about-section">
+    <img class="head-section-background" src="assets/images/about_background.png" alt="background">
+    <div class="container info-projects">
       <div class="info">
         <h1 class="title">Yurii Klymenko</h1>
         <p class="subtitle">Software Engineer, Front-end & Back-end Developer</p>
@@ -60,8 +62,61 @@
         <a class="cta-link" href="#">Case studies</a>
         <a class="cta-btn" href="#">Let’s work</a>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+
+  <section id="expertise" class="expertise-section">
+    <div class="container">
+      <h1 class="title">My Expertise</h1>
+
+      <div class="expertise-items">
+        <div class="item">
+          <div class="header">
+            <img src="assets/images/software-development.png" alt="Software development">
+            <h3 class="item-title">
+              <span>Software</span>
+              <br/>Development</h3>
+          </div>
+          <div class="body">
+            <p class="item-details">
+              Experienced in both Web & App development. Expertise with a lot of frameworks,
+              libraries and best approaches. Functional and OOP programming.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="header">
+            <img src="assets/images/ui.png" alt="ui">
+            <h3 class="item-title">
+              <span>Frontend Dev</span>
+              <br/>Angular, JS</h3>
+          </div>
+          <div class="body">
+            <p class="item-details">
+              Passionate about UI/UX. Over 5 years of development experience in HTML,
+              CSS, JS, Angular, React Native, Ionic, Material, Bootstrap, eCharts, etc.
+            </p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="header">
+            <img src="assets/images/api.png" alt="api">
+            <h3 class="item-title">
+              <span>Backend Dev</span>
+              <br/>Node.js, DBs</h3>
+          </div>
+          <div class="body">
+            <p class="item-details">
+              Skilled in developing of server side. Proficiency in Node.js, Express,
+              AWS Services (S3, Lambda, SQS), SQL, MongoDB, Rest Api and GraphQL, Docker.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <script type="text/javascript" src="assets/scripts/header.js"></script>
